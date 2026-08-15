@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    --equator-red: #E31837; 
+    --equator-black: #1A1A1A;
+    --equator-white: #FFFFFF;
+    --equator-gray: #F4F4F4;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--equator-white);
+    color: var(--equator-black);
+    font-family: var(--font-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+    color: var(--equator-black);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--equator-red);
+    color: var(--equator-white);
+    padding: 18px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px; 
+    transition: all 0.3s ease;
+    border: 2px solid var(--equator-red);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--equator-red);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(227, 24, 55, 0.3);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--equator-red);
+}
